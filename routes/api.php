@@ -12,6 +12,7 @@ Route::get('/user', function (Request $request) {
 
 //ENTERPRISE
 Route::get('/example', [EnterpriseController::class, 'index']);
+Route::post('/enterprise-add', [EnterpriseController::class, 'store']);
 
 
 //TOUR
