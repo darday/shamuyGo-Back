@@ -14,7 +14,11 @@ class EnterpriseController extends Controller
      */
     public function index()
     {
-        return ("Hola");
+        // Obtener todos los registros de la tabla users
+        $enterprise = enterprise::all();
+
+        // Retornar los registros como respuesta JSON
+        return response()->json($enterprise);
     }
 
     /**

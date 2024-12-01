@@ -11,7 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 //ENTERPRISE
-Route::get('/example', [EnterpriseController::class, 'index']);
+Route::get('/enterprise-list', [EnterpriseController::class, 'index']);
 Route::post('/enterprise-add', [EnterpriseController::class, 'store']);
 
 
